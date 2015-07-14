@@ -22,7 +22,30 @@ knitr::opts_chunk$set(
 
 Date: 20 July, 2015<br />
 
-## Project Updates from the Core Team 
+# _Bioconductor_ Project Updates
 
+Valerie Obenchain, including Herve Pages
 
+Marc Carlson
 
+Dan Tenenbaum
+
+Sonali Arora
+
+Paul Shannon
+
+Jim Hester
+
+Martin Morgan, for Nathaniel Hayden
+
+- Rhtslib
+
+  - GNUlib is neat
+  - bamsignals -- 'straight-forward' use; good example
+  - deepSNV -- takes advantage of CRAM support
+
+- Rsamtools with Rhtslib
+
+  - To be released immediately after BioC2015
+
+- h5robj -- S4 in h5
