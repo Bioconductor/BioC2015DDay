@@ -1,7 +1,7 @@
 # BioC2015DDay
 BioC2015 July 20, Seattle, WA
 
-This package contains slides from the core Bioconductor to highlight our contributions to the Bioconductor Project in the last year.
+This package contains slides from the core Bioconductor team to highlight our contributions to the Bioconductor Project in the last year.
 
 
 ## Acknowledgements
