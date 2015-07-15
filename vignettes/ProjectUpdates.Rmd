@@ -45,12 +45,12 @@ Since BioC2014:
    - Rewrite recipes after Major AnnotationHub refactor
    - New resources added to the hub 
       - GTF files from Ensembl release 76 to 80 (available as GRanges object)
-      - Epigenome RoadMap Files
-      - Chain files
-      - Two Bit Files
-      - BioPAX files (Level1 and Level2) from the NCI Pathway Interaction Database 
+      - [Epigenome RoadMap Files](http://www.roadmapepigenomics.org/)
+      - [UCSC Chain files](http://genome.ucsc.edu/goldenpath/help/chain.html)
+      - [UCSC Two Bit Files](http://genome.ucsc.edu/FAQ/FAQformat.html#format7)
+      - [BioPAX files](http://pid.nci.nih.gov/download.shtml) (Level1 and Level2) from the NCI Pathway Interaction Database 
       - [Pazar](http://www.pazar.info/tftargets/) - Database of Transcription Factor and  Regulatory Sequence Analysis
-      - Background file for ChEA required for the command line version of ChEA (available as data.frame object)
+      - Background file for [ChEA](http://amp.pharm.mssm.edu/lib/chea.jsp) required for the command line version of ChEA (available as data.frame object)
    - propogate metadata along with the object, once extracted from the Hub.
    - show() method for AnnotationHub (with Martin)  
    - Tutorial on [Epigenome RoadMap Files](http://www.bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html)
@@ -67,9 +67,9 @@ Since BioC2014:
         - ExperimentData -> TechnologyData -> [HighThroughputImagingData](http://www.bioconductor.org/packages/devel/BiocViews.html#___HighThroughputImagingData)
         - ExperimentData -> SpecimenSource -> [Somatic](http://www.bioconductor.org/packages/devel/BiocViews.html#___Somatic), [Germline](http://www.bioconductor.org/packages/devel/BiocViews.html#___Germline), [Proteome](http://www.bioconductor.org/packages/devel/BiocViews.html#___Proteome)
         - ExperimentData -> RepositoryData -> [Project1000genomes](http://www.bioconductor.org/packages/devel/BiocViews.html#___Project1000genomes)
-        - AnnotationData -> CodeLinkChip 
-        - Software -> Technology -> Sequencing -> HiC
-        - Software -> WorkflowStep -> Pathways -> KEGG, Reactome, BioCarta, NCINatureCurated 
+        - AnnotationData -> [CodeLinkChip](http://www.bioconductor.org/packages/devel/BiocViews.html#___CodelinkChip) 
+        - Software -> Technology -> Sequencing -> [HiC](http://www.bioconductor.org/packages/devel/BiocViews.html#___HiC)
+        - Software -> WorkflowStep -> Pathways -> [KEGG](http://www.bioconductor.org/packages/devel/BiocViews.html#___KEGG), [Reactome](http://www.bioconductor.org/packages/devel/BiocViews.html#___Reactome), [BioCarta](http://www.bioconductor.org/packages/devel/BiocViews.html#___BioCarta), [NCINatureCurated](http://www.bioconductor.org/packages/devel/BiocViews.html#___NCINatureCurated) 
         - Software -> WorkflowStep -> Alignment -> [MultipleSequenceAlignment](http://www.bioconductor.org/packages/devel/BiocViews.html#___MultipleSequenceAlignment)
         - Software -> ResearchField -> [Transcriptomics](http://www.bioconductor.org/packages/devel/BiocViews.html#___Transcriptomics) 
 - __Revise__ [Sequencing Workflow](http://www.bioconductor.org/help/workflows/high-throughput-sequencing/)     
