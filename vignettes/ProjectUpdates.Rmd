@@ -24,11 +24,11 @@ Date: 20 July, 2015<br />
 
 # _Bioconductor_ Project Updates
 
-Valerie Obenchain, including Herve Pages
+## Valerie Obenchain, including Herve Pages
 
-Marc Carlson
+## Marc Carlson
 
-Dan Tenenbaum
+## Dan Tenenbaum
 
 Since BioC2014:
 
@@ -39,17 +39,58 @@ Since BioC2014:
 * Phasing out Git-Svn Bridge in favor of Git Mirrors
 * Use/usability shields on package landing pages
 
-Sonali Arora
+## Sonali Arora
 
-Paul Shannon
+- __AnnotationHub__
+   - Rewrite recipes after Major AnnotationHub refactor
+   - New resources added to the hub 
+      - GTF files from Ensembl release 76 to 80 (available as GRanges object)
+      - Epigenome RoadMap Files
+      - Chain files
+      - Two Bit Files
+      - BioPAX files (Level1 and Level2) from the NCI Pathway Interaction Database 
+      - [Pazar](http://www.pazar.info/tftargets/) - Database of Transcription Factor and  Regulatory Sequence Analysis
+      - Background file for ChEA required for the command line version of ChEA (available as data.frame object)
+   - propogate metadata along with the object, once extracted from the Hub.
+   - show() method for AnnotationHub (with Martin)  
+   - Tutorial on [Epigenome RoadMap Files](http://www.bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html)
+   - Video on [AnnotationHub](https://www.youtube.com/watch?v=pFvUOPfR8eA&feature=youtu.be)
+- Taken over as __Package Moderator__ from Marc Carlson since Jan 2015
+    - approcimately 120 packages added
+    - added 'pre-accepted' Stage to review process 
+    - Google Hangout for New Package Authors with Marc to share some key development tips and solicit questions from a wider audience.
+- __biocViews__
+    - New function - biocViews::recommendPackages(), searches release and devel
+    - Revise [ExperimentData](http://www.bioconductor.org/packages/devel/BiocViews.html#___ExperimentData) branch of biocViews
+    - added new biocViews
+        - ExperimentData -> [ReproducibleResearch](http://www.bioconductor.org/packages/devel/BiocViews.html#___ReproducibleResearch) to highlight packages containing code from Publications/Books
+        - ExperimentData -> TechnologyData -> [HighThroughputImagingData](http://www.bioconductor.org/packages/devel/BiocViews.html#___HighThroughputImagingData)
+        - ExperimentData -> SpecimenSource -> [Somatic](http://www.bioconductor.org/packages/devel/BiocViews.html#___Somatic), [Germline](http://www.bioconductor.org/packages/devel/BiocViews.html#___Germline), [Proteome](http://www.bioconductor.org/packages/devel/BiocViews.html#___Proteome)
+        - ExperimentData -> RepositoryData -> [Project1000genomes](http://www.bioconductor.org/packages/devel/BiocViews.html#___Project1000genomes)
+        - AnnotationData -> CodeLinkChip 
+        - Software -> Technology -> Sequencing -> HiC
+        - Software -> WorkflowStep -> Pathways -> KEGG, Reactome, BioCarta, NCINatureCurated 
+        - Software -> WorkflowStep -> Alignment -> [MultipleSequenceAlignment](http://www.bioconductor.org/packages/devel/BiocViews.html#___MultipleSequenceAlignment)
+        - Software -> ResearchField -> [Transcriptomics](http://www.bioconductor.org/packages/devel/BiocViews.html#___Transcriptomics) 
+- __Revise__ [Sequencing Workflow](http://www.bioconductor.org/help/workflows/high-throughput-sequencing/)     
+- __Assist/Teach Workshops__ with Martin
+   - [SeattleOct2014](http://bioconductor.org/help/course-materials/2014/SeattleOct2014/)
+   - [SeattleApr2015](http://bioconductor.org/help/course-materials/2015/SeattleApr2015/)
+   - [CSAMA2015](http://www-huber.embl.de/csama/)
+   - [useR2015](http://user2015.math.aau.dk/#BN)
+- __Website Design__, Implementation by Dan
+   - Course Material Page
 
-Jim Hester
+
+## Paul Shannon
+
+## Jim Hester
 
 - Git/GitHub Mirrors for SVN repositories (https://github.com/Bioconductor-mirror/)
 - Test Coverage Shields (package landing pages and https://codecov.io/github/Bioconductor-mirror)
 - `SummarizedExperiment`/`ExpressionSet` coercion methods and `rowRanges()` accessor.
 
-Martin Morgan, for Nathaniel Hayden
+## Martin Morgan, for Nathaniel Hayden
 
 - Rhtslib
 
