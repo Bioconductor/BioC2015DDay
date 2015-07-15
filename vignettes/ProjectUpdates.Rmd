@@ -45,6 +45,10 @@ Paul Shannon
 
 Jim Hester
 
+- Git/GitHub Mirrors for SVN repositories (https://github.com/Bioconductor-mirror/)
+- Test Coverage Shields (package landing pages and https://codecov.io/github/Bioconductor-mirror)
+- `SummarizedExperiment`/`ExpressionSet` coercion methods and `rowRanges()` accessor.
+
 Martin Morgan, for Nathaniel Hayden
 
 - Rhtslib
