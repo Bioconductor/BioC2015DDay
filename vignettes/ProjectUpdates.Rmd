@@ -26,6 +26,28 @@ Date: 20 July, 2015<br />
 
 ## Valerie Obenchain, including Herve Pages
 
+Valerie
+- `BiocParallel`
+  - unify interface for error handling, re-compting failed results
+  - logging, worker timeout, write out results (`SnowParam`, `MulticoreParam`)
+- `GenomicFiles`
+- coordinate mapping:
+  - `mapToTranscripts()`, `mapFromTranscripts()` (`GenomicFeatures` package)
+  - `mapToAlignments()`, `mapFromAlignments()` (`GenomicAlignments` package)
+- Newsletters
+
+Herve
+
+- NCList: Nested Containment List algorithm for counting overlaps
+  - 'algorithm' arg added to overlaps operations
+- `BSGenome` package
+  - `XtraSNPlocs` class and packages
+    hold locations of _in-del_, _heterozygous_, _microsatellite_, _named-locus_, _no-variation_, _mixed_, etc.
+  - `snpsBySeqname()`, `snpsByOverlaps()`, `snpsById()` methods on `SNPlocs`, `XtraSNPlocs` objects
+- `makeGRangesFromDataFrame()`, `makeTxDbFrom*()` functions
+- refactor `SummarizedExperiment` class
+
+
 ## Marc Carlson
 
 ## Dan Tenenbaum
