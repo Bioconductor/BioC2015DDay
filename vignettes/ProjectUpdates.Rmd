@@ -26,7 +26,7 @@ Date: 20 July, 2015<br />
 
 ## Valerie Obenchain, including Herve Pages
 
-Valerie
+### Valerie
 - `BiocParallel`
   - unify interface for error handling, re-compting failed results
   - logging, worker timeout, write out results (`SnowParam`, `MulticoreParam`)
@@ -36,7 +36,7 @@ Valerie
   - `mapToAlignments()`, `mapFromAlignments()` (`GenomicAlignments` package)
 - Newsletters
 
-Herve
+### Herve
 
 - NCList: Nested Containment List algorithm for counting overlaps
   - 'algorithm' arg added to overlaps operations
