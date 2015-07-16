@@ -78,7 +78,7 @@ Since BioC2014:
    - Tutorial on [Epigenome RoadMap Files](http://www.bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html)
    - Video on [AnnotationHub](https://www.youtube.com/watch?v=pFvUOPfR8eA&feature=youtu.be)
 - Taken over as __Package Moderator__ from Marc Carlson since Jan 2015
-    - approcimately 120 packages added
+    - approximately 120 packages added
     - added 'pre-accepted' Stage to review process 
     - Google Hangout for New Package Authors with Marc to share some key development tips and solicit questions from a wider audience.
 - __biocViews__
@@ -88,20 +88,11 @@ Since BioC2014:
         - ExperimentData -> [ReproducibleResearch](http://www.bioconductor.org/packages/devel/BiocViews.html#___ReproducibleResearch) to highlight packages containing code from Publications/Books
         - ExperimentData -> RepositoryData -> [Project1000genomes](http://www.bioconductor.org/packages/devel/BiocViews.html#___Project1000genomes)
         - Software -> WorkflowStep -> Pathways -> [KEGG](http://www.bioconductor.org/packages/devel/BiocViews.html#___KEGG), [Reactome](http://www.bioconductor.org/packages/devel/BiocViews.html#___Reactome), [BioCarta](http://www.bioconductor.org/packages/devel/BiocViews.html#___BioCarta), [NCINatureCurated](http://www.bioconductor.org/packages/devel/BiocViews.html#___NCINatureCurated) 
-        - ExperimentData -> TechnologyData -> [HighThroughputImagingData](http://www.bioconductor.org/packages/devel/BiocViews.html#___HighThroughputImagingData)
-        - ExperimentData -> SpecimenSource -> [Somatic](http://www.bioconductor.org/packages/devel/BiocViews.html#___Somatic), [Germline](http://www.bioconductor.org/packages/devel/BiocViews.html#___Germline), [Proteome](http://www.bioconductor.org/packages/devel/BiocViews.html#___Proteome)
-        - AnnotationData -> [CodeLinkChip](http://www.bioconductor.org/packages/devel/BiocViews.html#___CodelinkChip) 
-        - Software -> Technology -> Sequencing -> [HiC](http://www.bioconductor.org/packages/devel/BiocViews.html#___HiC)
-        - Software -> WorkflowStep -> Alignment -> [MultipleSequenceAlignment](http://www.bioconductor.org/packages/devel/BiocViews.html#___MultipleSequenceAlignment)
-        - Software -> ResearchField -> [Transcriptomics](http://www.bioconductor.org/packages/devel/BiocViews.html#___Transcriptomics) 
+        -...
 - __Revise__ [Sequencing Workflow](http://www.bioconductor.org/help/workflows/high-throughput-sequencing/)     
 - __Assist/Teach Workshops__ with Martin
-   - [SeattleOct2014](http://bioconductor.org/help/course-materials/2014/SeattleOct2014/)
-   - [SeattleApr2015](http://bioconductor.org/help/course-materials/2015/SeattleApr2015/)
-   - [CSAMA2015](http://www-huber.embl.de/csama/)
-   - [useR2015](http://user2015.math.aau.dk/#BN)
-- __Website Design__, Implementation by Dan
-   - Course Material Page
+   - [SeattleOct2014](http://bioconductor.org/help/course-materials/2014/SeattleOct2014/) , [SeattleApr2015](http://bioconductor.org/help/course-materials/2015/SeattleApr2015/), [CSAMA2015](http://www-huber.embl.de/csama/) , [useR2015](http://user2015.math.aau.dk/#BN)
+- __Website Design__, Implementation by Dan- Course Material Page
 
 
 ## Paul Shannon
