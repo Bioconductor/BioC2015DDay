@@ -1,0 +1,37 @@
+# How to submit your Package to Bioconductor ?
+
+## Write your package - resources:
+- [Hadley Wickham's book - R packages](http://r-pkgs.had.co.nz/)
+- [Primer for making Bioc packages](http://bioconductor.org/developers/how-to/buildingPackagesForBioc/)
+- [Coding Resources on Developer Page](http://bioconductor.org/developers/) 
+like [C++/Mavericks Best Practises](http://www.bioconductor.org/developers/how-to/mavericks-howto/),
+[Debug C/C++ code](http://www.bioconductor.org/developers/how-to/c-debugging/),
+[UnitTesting](http://www.bioconductor.org/developers/how-to/unitTesting-guidelines/), ...
+  
+
+## Checks before you submit a package to Bioconductor
+- Does it follow [Bioconductor's Package Guidelines](http://bioconductor.org/developers/package-guidelines/)
+- Does it pass R CMD build and check on your local machine without error/warnings? notes are okay! 
+- Does it pass R CMD BiocCheck without any required/recommendations ? considerations are okay!
+
+## Email packages@bioconductor.org to submit your package
+
+## Using the tracker to submit your package 
+- Getting used to the single build report for a given package. 
+- Fix all warnings, required and recommendations from the single build report as soon as possible.
+
+## What to expect in a typical review process? 
+- If you have warnings, required or recommendations -- expect to be told that you need to fix them!
+- Give about 2 weeks for the reviewer to get back to you.
+  
+## 'Pre-accept' to 'Accept' 
+- Packages added to the repository collectively every Thursday
+- Build Report is available on Friday
+- Build report available at http://www.bioconductor.org/checkResults/
+- If package has a clear build report, then marked 'accepted'
+
+##- Common Questions
+- 'Release' vs 'Devel'
+- R version and Bioconductor Version.
+- How to update your accepted package in Bioconductor?
+- Add new mainatiner/contributor for your package    
