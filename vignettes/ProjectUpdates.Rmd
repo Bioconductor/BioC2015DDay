@@ -66,7 +66,7 @@ AnnotationHub enhancements:
  - Fasta files
 * New resources:
  - OrgDd (all)
- - makeOrganismDbFromTxDb()
+ - `makeOrganismDbFromTxDb()` will soon link GTFs with OrgDb objects to make OrganismDb objects
 
 ## Dan Tenenbaum
 
