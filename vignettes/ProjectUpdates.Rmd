@@ -49,6 +49,26 @@ Date: 20 July, 2015<br />
 
 
 ## Marc Carlson
+* `mapIds()` for vectorized queries
+* `dbconn()` and `dbfile()` for people who want DB access
+* `makeOrganismDbFromTxDb()` For people who want OrganismDb objects 
+			 
+AnnotationHub enhancements:
+* enhanced flexibility for which things can be hosted: 
+ - resources no longer have to live on amazon (but can be redirected)
+ - resources can be conveniently post processed to produce more useful objects.
+   eg. GTFs -> GRanges -> TxDbs -> OrganismDbs
+* programmer friendly command line interface for AnnotationHub 
+* easy way to learn which values can be searched on and then searched on unique(ah$dataprovider)
+* revised display method
+
+* Updated recipes/resources
+ - Inparanoid
+ - Fasta files
+
+* New resources:
+ - OrgDd (all)
+ - makeOrganismDbFromTxDb()
 
 ## Dan Tenenbaum
 
