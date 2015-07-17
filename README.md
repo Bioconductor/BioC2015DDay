@@ -1,7 +1,30 @@
 # BioC2015DDay
 BioC2015 July 20, Seattle, WA
 
-This package contains slides from the core Bioconductor team to highlight our contributions to the __Bioconductor Project__ in the last year.
+This package contains material from the core Bioconductor team to highlight our contributions to the __Bioconductor Project__ in the last year and other material that will be used for Developer Day. 
+
+## Program Outline 
+
+__Morning – 8:30 - 12:00, Arnold Building M1-A303/5/7__
+
+- Project updates
+- Developer / group activities
+- Fast-pitch Challenge: better end-user tools for learning and using R / Bioconductor.
+- Contributed ‘lightning’ talks
+
+__Afternoon – 1:00 - 5:00, Arnold Building M1-A303/5/7__
+
+- Demo derby 
+    – ‘demolition derby: a competition in which cars are driven into each other until only one is left running’ 
+    – come prepared to demo your shiny or other interactive apps and see how they compare with others from the community!
+- Developer workshops. 
+- Tentative possibilities
+    - C / C++ integration; 
+    - code analysis and test coverage with [lintr and covr](https://github.com/Bioconductor/Bioc2015LintrCovr) (Jim Hester); 
+    - Packages for first-time contributors [outline](https://github.com/Bioconductor/BioC2015DDay/blob/master/vignettes/Sonali-NewPackages.Rmd); 
+    - Data base and web resources in R; 
+    - …
+- Future directions – presentation & discussion
 
 
 ## Acknowledgements
