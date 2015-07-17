@@ -92,7 +92,7 @@ Since BioC2014:
       - [Pazar](http://www.pazar.info/tftargets/) - Database of Transcription Factor and  Regulatory Sequence Analysis
       - Background file for [ChEA](http://amp.pharm.mssm.edu/lib/chea.jsp) required for the command line version of ChEA (available as data.frame object)
    - propogate metadata along with the object, once extracted from the Hub.
-   - show() method for AnnotationHub (with Martin)  
+   - show() method for AnnotationHub; `query()`for faster access (with Martin & Marc)  
    - Tutorial on [Epigenome RoadMap Files](http://www.bioconductor.org/packages/devel/bioc/vignettes/AnnotationHub/inst/doc/AnnotationHub-HOWTO.html)
    - Video on [AnnotationHub](https://www.youtube.com/watch?v=pFvUOPfR8eA&feature=youtu.be)
 - Taken over as __Package Moderator__ from Marc Carlson since Jan 2015
