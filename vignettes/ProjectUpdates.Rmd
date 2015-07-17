@@ -61,11 +61,9 @@ AnnotationHub enhancements:
 * programmer friendly command line interface for AnnotationHub 
 * easy way to learn which values can be searched on and then searched on unique(ah$dataprovider)
 * revised display method
-
 * Updated recipes/resources
  - Inparanoid
  - Fasta files
-
 * New resources:
  - OrgDd (all)
  - makeOrganismDbFromTxDb()
