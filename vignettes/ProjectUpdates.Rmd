@@ -55,9 +55,9 @@ Date: 20 July, 2015<br />
 			 
 AnnotationHub enhancements:
 * enhanced flexibility for which things can be hosted: 
- - resources no longer have to live on amazon (but can be redirected)
- - resources can be conveniently post processed to produce more useful objects.
-   eg. GTFs -> GRanges -> TxDbs -> OrganismDbs
+ - resources no longer have to live on amazon (can be redirected)
+ - resources can be conveniently post processed to produce many useful objects from same start material.
+   - eg. GTFs -> GRanges -> TxDbs -> OrganismDbs
 * programmer friendly command line interface for AnnotationHub 
 * easy way to learn which values can be searched on and then searched on unique(ah$dataprovider)
 * revised display method
