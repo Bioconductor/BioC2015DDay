@@ -114,7 +114,16 @@ Since BioC2014:
 
 
 ## Paul Shannon
+BrowserViz is a base class, accompanied by supporting Javascript, for reciprocally interactive R/browser visualizations. It differs from Shiny in that
+ - R session stays live, is reciprocally interactive with the web browser code
+ - Assumes the programmer can program in (or is willing to learn) Javascript
 
+Three BrowserViz subclasses so far:
+
+ - BrowserVizDemo: minimal R and Javascript for a simple xy plotter
+ - RCyjs: full-featured R interface to cytoscape.js
+ - BrowserTable: (work in progress) jQuery DataTable with server-side (R) paging for large data.frames
+ 
 ## Jim Hester
 
 - Git/GitHub Mirrors for SVN repositories (https://github.com/Bioconductor-mirror/)
