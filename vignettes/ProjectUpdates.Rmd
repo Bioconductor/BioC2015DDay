@@ -65,7 +65,7 @@ AnnotationHub enhancements:
  - Inparanoid
  - Fasta files
 * New resources:
- - OrgDd (all)
+ - OrgDd  (packages and non-packaged)
  - `makeOrganismDbFromTxDb()` will soon link GTFs with OrgDb objects to make OrganismDb objects
 
 ## Dan Tenenbaum
