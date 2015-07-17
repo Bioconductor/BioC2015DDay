@@ -1,0 +1,167 @@
+# Code Demo for Developers Day 
+Author: Sonali Arora   
+Date: July 20, 2015 
+
+## AnnotationHub 
+
+```{}
+## Loading the Package.
+> library(AnnotationHub)
+> ah = AnnotationHub()
+snapshotDate(): 2015-07-17
+
+## much more informative show() method.
+## two different show methods - single file vs multiple files.
+> ah
+AnnotationHub with 34950 records
+# snapshotDate(): 2015-07-17
+# $dataprovider: BroadInstitute, UCSC, Ensembl, NCBI, Haemcode, Inparanoid8,...
+# $species: Homo sapiens, Mus musculus, Bos taurus, Pan troglodytes, Danio r...
+# $rdataclass: GRanges, BigWigFile, FaFile, OrgDb, ChainFile, Inparanoid8Db,...
+# additional mcols(): taxonomyid, genome, description, tags, sourceurl,
+#   sourcetype
+# retrieve records with, e.g., 'object[["AH2"]]'
+
+            title
+  AH2     | Ailuropoda_melanoleuca.ailMel1.69.dna.toplevel.fa
+  AH3     | Ailuropoda_melanoleuca.ailMel1.69.dna_rm.toplevel.fa
+  AH4     | Ailuropoda_melanoleuca.ailMel1.69.dna_sm.toplevel.fa
+  AH5     | Ailuropoda_melanoleuca.ailMel1.69.ncrna.fa
+  AH6     | Ailuropoda_melanoleuca.ailMel1.69.pep.all.fa
+  ...       ...
+  AH48001 | Tupaia_belangeri.TREESHREW.81.gtf
+  AH48002 | Tursiops_truncatus.turTru1.81.gtf
+  AH48003 | Vicugna_pacos.vicPac1.81.gtf
+  AH48004 | Xenopus_tropicalis.JGI_4.2.81.gtf
+  AH48005 | Xiphophorus_maculatus.Xipmac4.4.2.81.gtf
+
+## query() - enhanced and intuitive way of searching for files
+## bed files represented as From EpigenomeRoadMap Project  -- show() method for multiple files.
+> bedFiles <- query(ah , c("bed", "epigenomeroadmap", "E001"))
+> bedFiles
+AnnotationHub with 19 records
+# snapshotDate(): 2015-07-17
+# $dataprovider: BroadInstitute
+# $species: Homo sapiens
+# $rdataclass: GRanges
+# additional mcols(): taxonomyid, genome, description, tags, sourceurl,
+#   sourcetype
+# retrieve records with, e.g., 'object[["AH28856"]]'
+
+            title
+  AH28856 | E001-H3K4me1.broadPeak.gz
+  AH28857 | E001-H3K4me3.broadPeak.gz
+  AH28858 | E001-H3K9ac.broadPeak.gz
+  AH28859 | E001-H3K9me3.broadPeak.gz
+  AH28860 | E001-H3K27me3.broadPeak.gz
+  ...       ...
+  AH30914 | E001-H3K9ac.gappedPeak.gz
+  AH30915 | E001-H3K9me3.gappedPeak.gz
+  AH30916 | E001-H3K27me3.gappedPeak.gz
+  AH30917 | E001-H3K36me3.gappedPeak.gz
+  AH46856 | E001_15_coreMarks_mnemonics.bed.gz
+
+## get one file's information to keep for later -- show() method for 1 file.
+> bedFiles['AH28856']
+AnnotationHub with 1 record
+# snapshotDate(): 2015-07-17
+# names(): AH28856
+# $dataprovider: BroadInstitute
+# $species: Homo sapiens
+# $rdataclass: GRanges
+# $title: E001-H3K4me1.broadPeak.gz
+# $description: Broad ChIP-seq peaks for consolidated epigenomes from Epigen...
+# $taxonomyid: 9606
+# $genome: hg19
+# $sourcetype: BED
+# $sourceurl: http://egg2.wustl.edu/roadmap/data/byFileType/peaks/consolidat...
+# $sourcelastmodifieddate: 2013-10-31
+# $sourcesize: 7519722
+# $tags: EpigenomeRoadMap, peaks, consolidated, broadPeak, E001, ESC,
+#   ESC.I3, ES-I3 Cells
+# retrieve record with 'object[["AH28856"]]'
+
+## downloading the file -- pre-prcocessed as GRanges 
+> gr  <- bedFiles[['AH28856']]
+require(“rtracklayer”)
+
+> gr
+GRanges object with 355118 ranges and 6 metadata columns:
+           seqnames                 ranges strand   |        name     score
+              <Rle>              <IRanges>  <Rle>   | <character> <numeric>
+       [1]     chr3 [195423087, 195426700]      *   |      Rank_1        78
+       [2]    chr17 [ 41080552,  41081406]      *   |      Rank_2        72
+       [3]    chr16 [ 65269248,  65270757]      *   |      Rank_3        71
+       [4]    chr10 [ 46973856,  46977224]      *   |      Rank_4        70
+       [5]    chr17 [ 48425051,  48426662]      *   |      Rank_5        69
+       ...      ...                    ...    ... ...         ...       ...
+  [355114]     chr6 [100602736, 100603151]      *   | Rank_355114         0
+  [355115]     chr6 [ 18251768,  18251961]      *   | Rank_355115         0
+  [355116]     chrX [ 21444665,  21445036]      *   | Rank_355116         0
+  [355117]    chr17 [ 77913489,  77913735]      *   | Rank_355117         0
+  [355118]     chr4 [  6712348,   6712652]      *   | Rank_355118         0
+           signalValue    pValue    qValue      peak
+             <numeric> <numeric> <numeric> <numeric>
+       [1]        <NA>   3.23874  10.67458   7.87721
+       [2]        <NA>   3.70866   9.91354   7.23544
+       [3]        <NA>   4.42401   9.75522   7.11566
+       [4]        <NA>   3.00554   9.70745   7.07189
+       [5]        <NA>   3.91848   9.56466   6.93256
+       ...         ...       ...       ...       ...
+  [355114]        <NA>   1.46240   1.00757   0.04592
+  [355115]        <NA>   1.46240   1.00757   0.04592
+  [355116]        <NA>   1.46240   1.00757   0.04592
+  [355117]        <NA>   1.41873   1.00674   0.04497
+  [355118]        <NA>   1.41583   1.00665   0.04495
+  -------
+  seqinfo: 93 sequences (1 circular) from hg19 genome
+  
+## information available in GRanges to trace back to the hub.  
+> metadata(gr)
+$AnnotationHubName
+[1] "AH28856"
+
+$`File Name`
+[1] "E001-H3K4me1.broadPeak.gz"
+
+$`Data Source`
+[1] "http://egg2.wustl.edu/roadmap/data/byFileType/peaks/consolidated/broadPeak/E001-H3K4me1.broadPeak.gz                                                                                                                                                     "
+
+$Provider
+[1] "BroadInstitute"
+
+$Organism
+[1] "Homo sapiens"
+
+$`Taxonomy ID`
+[1] 9606
+  
+## Other intuitive examples
+twobit <- query(ah , c("twobit","ucsc", "hg38"))
+chainFiles <- query(ah , c("chain","ucsc","liftover", "hg38", "mm10"))
+  
+```
+
+
+## biocViews::recommendPackages()
+
+
+```{}
+> library(biocViews)
+
+## all packages in Release that have both "PrincipalComponent" and "DimensionReduction"
+> recommendPackages(c("PrincipalComponent", "DimensionReduction"))
+[1] "GENESIS"  "STATegRa"
+
+## all packages in Release that have either "PrincipalComponent" or "DimensionReduction"
+> recommendPackages(c("PrincipalComponent", "DimensionReduction"), intersect.views=FALSE)
+[1] "cytofkit"   "GENESIS"    "mogsa"      "RDRToolbox" "SNPRelate"
+[6] "STATegRa"
+
+## all packages in Devel that have either "PrincipalComponent" or "DimensionReduction"
+> recommendPackages(c("PrincipalComponent", "DimensionReduction"), intersect.views=FALSE, use.release=FALSE)
+[1] "acde"       "cytofkit"   "GENESIS"    "mogsa"      "RDRToolbox"
+[6] "ropls"      "SNPRelate"  "STATegRa"
+
+```
+
