@@ -36,7 +36,7 @@ AnnotationHub with 34950 records
   AH48005 | Xiphophorus_maculatus.Xipmac4.4.2.81.gtf
 
 ## query() - enhanced and intuitive way of searching for files
-## bed files represented as From EpigenomeRoadMap Project  -- show() method for multiple files.
+## bed files represented as GRanges, From EpigenomeRoadMap Project  -- show() method for multiple files.
 > bedFiles <- query(ah , c("bed", "epigenomeroadmap", "E001"))
 > bedFiles
 AnnotationHub with 19 records
@@ -84,7 +84,6 @@ AnnotationHub with 1 record
 ## downloading the file -- pre-prcocessed as GRanges 
 > gr  <- bedFiles[['AH28856']]
 require(“rtracklayer”)
-
 > gr
 GRanges object with 355118 ranges and 6 metadata columns:
            seqnames                 ranges strand   |        name     score
@@ -125,7 +124,7 @@ $`File Name`
 [1] "E001-H3K4me1.broadPeak.gz"
 
 $`Data Source`
-[1] "http://egg2.wustl.edu/roadmap/data/byFileType/peaks/consolidated/broadPeak/E001-H3K4me1.broadPeak.gz                                                                                                                                                     "
+[1] "http://egg2.wustl.edu/roadmap/data/byFileType/peaks/consolidated/broadPeak/E001-H3K4me1.broadPeak.gz"
 
 $Provider
 [1] "BroadInstitute"
