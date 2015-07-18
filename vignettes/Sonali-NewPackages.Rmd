@@ -14,7 +14,7 @@ like [C++/Mavericks Best Practises](http://www.bioconductor.org/developers/how-t
 - Does it pass R CMD build and check on your local machine without error/warnings? notes are okay! 
 - Does it pass R CMD BiocCheck without any required/recommendations ? considerations are okay!
 
-## Email packages@bioconductor.org to submit your package
+## Email [Bioconductor](emailto:packages@bioconductor.org) to submit your package
 
 ## Using the tracker to submit your package 
 - Getting used to the single build report for a given package. 
@@ -30,7 +30,7 @@ like [C++/Mavericks Best Practises](http://www.bioconductor.org/developers/how-t
 - Build report available at http://www.bioconductor.org/checkResults/
 - If package has a clear build report, then marked 'accepted'
 
-##- Common Questions
+## Common Questions
 - 'Release' vs 'Devel'
 - R version and Bioconductor Version.
 - How to update your accepted package in Bioconductor?
