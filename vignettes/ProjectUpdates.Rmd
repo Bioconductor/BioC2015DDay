@@ -29,12 +29,20 @@ Date: 20 July, 2015<br />
 ### Valerie
 - `BiocParallel`
   - unify interface for error handling, re-compting failed results
-  - logging, worker timeout, write out results (`SnowParam`, `MulticoreParam`)
-- `GenomicFiles`
+  - logging, worker timeout, write out results
+```{r results='asis', echo=FALSE}
+  > SnowParam()
+class: SnowParam 
+  bpjobname:BPJOB; bpworkers:6; bptasks:0; bptimeout:Inf; bpRNGseed:; bpisup:FALSE
+  bplog:FALSE; bpthreshold:INFO; bplogdir:NA
+  bpstopOnError:FALSE; bpprogressbar:FALSE
+  bpresultdir:NA
+cluster type: SOCK 
+```
 - coordinate mapping:
   - `mapToTranscripts()`, `mapFromTranscripts()` (`GenomicFeatures` package)
   - `mapToAlignments()`, `mapFromAlignments()` (`GenomicAlignments` package)
-- Newsletters
+- [Newsletters](http://www.bioconductor.org/help/newsletters/)
 
 ### Herve
 
@@ -46,7 +54,26 @@ Date: 20 July, 2015<br />
   - `snpsBySeqname()`, `snpsByOverlaps()`, `snpsById()` methods on `SNPlocs`, `XtraSNPlocs` objects
 - `makeGRangesFromDataFrame()`, `makeTxDbFrom*()` functions
 - refactor `SummarizedExperiment` class
-
+```{r results='asis', eval=FALSE}
+> library(SummarizedExperiment)
+> data.frame(TYPE=getSlots("SummarizedExperiment0"))
+                           TYPE
+colData               DataFrame
+assays                   Assays
+NAMES           characterORNULL
+elementMetadata       DataFrame
+metadata                   list
+```
+```{r results='asis', eval=FALSE}
+> data.frame(TYPE=getSlots("RangedSummarizedExperiment"))
+                                      TYPE
+rowRanges       GenomicRangesORGRangesList
+colData                          DataFrame
+assays                              Assays
+NAMES                      characterORNULL
+elementMetadata                  DataFrame
+metadata                              list
+```
 
 ## Marc Carlson
 * `mapIds()` for vectorized queries
