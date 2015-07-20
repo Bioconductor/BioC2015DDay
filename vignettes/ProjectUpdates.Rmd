@@ -76,6 +76,17 @@ elementMetadata                  DataFrame
 metadata                              list
 ```
 
+## Dan Tenenbaum
+
+Since BioC2014:
+
+* Mavericks Build Machines (Snow Leopard support to be dropped soon)
+* Support Site went live
+* [Search course materials by topic](http://bioconductor.org/help/course-materials/); Course AMIs available
+* Began Docker support (attend my workshop for more info)
+* Phasing out Git-Svn Bridge in favor of Git Mirrors
+* Use/usability shields on package landing pages
+
 ## Marc Carlson
 * `mapIds()` for vectorized queries
 * `dbconn()` and `dbfile()` for people who want DB access
@@ -95,17 +106,6 @@ AnnotationHub enhancements:
 * New resources:
  - OrgDd  (packages and non-packaged)
  - `makeOrganismDbFromTxDb()` will soon link GTFs with OrgDb objects to make OrganismDb objects
-
-## Dan Tenenbaum
-
-Since BioC2014:
-
-* Mavericks Build Machines (Snow Leopard support to be dropped soon)
-* Support Site went live
-* [Search course materials by topic](http://bioconductor.org/help/course-materials/); Course AMIs available
-* Began Docker support (attend my workshop for more info)
-* Phasing out Git-Svn Bridge in favor of Git Mirrors
-* Use/usability shields on package landing pages
 
 ## Sonali Arora
 
