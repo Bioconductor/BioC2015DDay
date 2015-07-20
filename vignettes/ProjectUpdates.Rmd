@@ -27,6 +27,11 @@ Date: 20 July, 2015<br />
 ## Valerie Obenchain, including Herve Pages
 
 ### Valerie
+
+- [Newsletters](http://www.bioconductor.org/help/newsletters/)
+- coordinate mapping:
+  - `mapToTranscripts()`, `mapFromTranscripts()` (`GenomicFeatures` package)
+  - `mapToAlignments()`, `mapFromAlignments()` (`GenomicAlignments` package)
 - `BiocParallel`
   - unify interface for error handling, re-compting failed results
   - logging, worker timeout, write out results
@@ -39,10 +44,6 @@ class: SnowParam
   bpresultdir:NA
 cluster type: SOCK 
 ```
-- coordinate mapping:
-  - `mapToTranscripts()`, `mapFromTranscripts()` (`GenomicFeatures` package)
-  - `mapToAlignments()`, `mapFromAlignments()` (`GenomicAlignments` package)
-- [Newsletters](http://www.bioconductor.org/help/newsletters/)
 
 ### Herve
 
